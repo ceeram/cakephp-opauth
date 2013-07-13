@@ -1,0 +1,22 @@
+{
+	"name": "ceeram/cakephp-opauth",
+	"description": "Opauth plugin for CakePHP v2.x, allowing simple plug-n-play 3rd-party authentication with CakePHP",
+	"type": "cakephp-plugin",
+	"keywords": ["cakephp", "opauth", "authentication", "auth", "oauth"],
+	"homepage": "http://opauth.org",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ceeram",
+			"homepage": "http://ceeram.github.io"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"composer/installers": "1.*",
+		"opauth/opauth": "dev-wip/1.0"
+	},
+	"extra": {
+	    "installer-name": "Opauth"
+    }
+}

@@ -1,0 +1,36 @@
+<?php
+/**
+ * Default bootstrap for Opauth CakePHP plugin.
+ *
+ * CakePlugin::load('Opauth', array('routes' => true, 'bootstrap' => true));
+ */
+
+
+/**
+ * Path where Opauth is accessed.
+ *
+ * Begins and ends with /
+ * eg. if Opauth is reached via http://example.org/auth/, path is '/auth/'
+ * Defaults to '/auth/'
+ */
+//Configure::write('Opauth.path', '/login/');
+
+/**
+ * Callback URL: redirected to after authentication, successful or otherwise
+ * Defaults to 'callback', which results in http://example.org/auth/callback
+ */
+//Configure::write('Opauth.callback', 'other');
+
+/**
+ * Strategy
+ * Refer to individual strategy's documentation on configuration requirements.
+ *
+ * Add strategy configurations in your app's bootstrap.php in the following format:
+ *
+ * Configure::write('Opauth.Strategy.Facebook', array(
+ *     'app_id' => 'YOUR FACEBOOK APP ID',
+ *     'app_secret' => 'YOUR FACEBOOK APP SECRET'
+ * ));
+ *
+ */
+Configure::write('Opauth.Strategy', array());
